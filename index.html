@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Calculator</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid custom-img mt-2" 
+                    src="https://raw.githubusercontent.com/Aryansinha2811/Marks-Calculator/master/Photos/Ignou%20logo.png"
+                    alt="Ignou Logo" width="80" height="80">
+                </a>
+
+                <button class="navbar-toggler mx-2 me-3 pe-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto fs-5 text-center">
+                        <li class="nav-item fw-bold px-5">
+                            <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item fw-bold px-5">
+                            <a class="nav-link text-white" href="https://www.linkedin.com/in/akash-kumar-dubey-151338275/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li class="nav-item fw-bold px-5">
+                     <a class="nav-link text-white" href="https://github.com/Akashdubey112" target="_blank" >GitHub</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-info rounded-pill fw-bolder text-white me-5 px-4 btn-ignou">IGNOU</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-1">
+        <div class="container">
+            <h2 class="heading-tag text-center fw-bolder pt-5 fs-1 fst-italic">
+                Marks Calculator for I G N O U !!
+            </h2>
+            <p class="para-1 text-center fw-bolder fs-3 pt-3 ">
+                "Welcome to &#x1F44B;  the Marks Calculator! !!
+            </p>
+        </div>
+
+        <section class="border-bottom pb-1 border-dark"> 
+            <div class="info-ticker text-nowrap pt-3 mt-2">
+                <div class="info-items fs-1">
+                    <h3>You have to write your Theory Marks from Out of 100 and same goes for Assignment Marks. Theory Marks will be Evaluated out of 70 and the Assignment Marks will be Evaluated out of 30 !!  Use Your Grade card to fill the numbers . Download your grade card from here &#x1F449;  <a id="grade-Card" href="https://gradecard.ignou.ac.in/gradecard/" target="_blank">   Download Grade Card</a>  &#x1F448;  .After Filling your marks you have to click on the "Submit Marks" Button.   Have a Good Day &#128513; !!......</h3>
+                </div>
+            </div>
+        </section>
+    </section>
+
+  <!-- Marks Calculator Form -->
+<div class="container-fluid  pt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-10">
+            <div class="row">
+                <!-- Subject Numbers Column -->
+                <div class="col-12 col-md-3">
+                    <div class="card rounded-layout text-white">
+                        <div class="card-body text-center">
+                            <h5 class="col-title">Subject No.</h5>
+                            <div class="subject-row pt-4">Subject 1</div>
+                            <div class="subject-row pt-4">Subject 2</div>
+                            <div class="subject-row pt-4">Subject 3</div>
+                            <div class="subject-row pt-4">Subject 4</div>
+                            <div class="subject-row pt-4">Subject 5</div>
+                            <div class="subject-row pt-4">Subject 6</div>
+                            <div class="subject-row pt-4">Subject 7</div>
+                            <div class="subject-row pt-4">Subject 8</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Theory Marks Column -->
+                <div class="col-12 col-md-3">
+                    <div class="card rounded-layout text-white">
+                        <div class="card-body text-center">
+                            <h5 class="col-title">Theory Marks (Out of 100)</h5>
+                            <div class="subject-row pt-2">
+                                <input type="number" id="theory-1" class="input-box" name="number" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" id="theory-2"  class="input-box" name="number"  min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" id="theory-3"  class="input-box" name="number" min="00" max="100" required> 
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number"  id="theory-4" class="input-box" name="number" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" 
+                                id="theory-5" class="input-box"  name="number" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number"
+                                id="theory-6"  class="input-box" name="number" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number"
+                                id="theory-7"  class="input-box" name="number" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number"
+                                id="theory-8"  class="input-box"  name="number" min="00" max="100" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assignment Marks Column -->
+                <div class="col-12 col-md-3">
+                    <div class="card rounded-layout text-white">
+                        <div class="card-body text-center">
+                            <h5 class="col-title">Assignment Marks (Out of 100)</h5>
+                            <div class="subject-row pt-2">
+                                <input type="number" class="input-box" name="number" id="Assignment-1"min="00" max="100" required >
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" class="input-box" name="number" id="Assignment-2"min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" class="input-box" name="number" id="Assignment-3" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" class="input-box" name="number" id="Assignment-4" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" class="input-box" name="number" id="Assignment-5" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" class="input-box" name="number" id="Assignment-6" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" class="input-box"  name="number" id="Assignment-7" min="00" max="100" required>
+                            </div>
+                            <div class="subject-row pt-2">
+                                <input type="number" class="input-box" name="number" id="Assignment-8" min="00" max="100" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Marks Column -->
+                <div class="col-12 col-md-3">
+                    <div class="card rounded-layout text-white">
+                        <div class="card-body text-center">
+                            <h5 class="col-title">Total Marks</h5>
+                            <div class="subject-row pt-2" id="total-1">---</div>
+                            <div class="subject-row pt-4" id="total-2">---</div>
+                            <div class="subject-row pt-4" id="total-3">---</div>
+                            <div class="subject-row pt-4" id="total-4">---</div>
+                            <div class="subject-row pt-4" id="total-5">---</div>
+                            <div class="subject-row pt-5" id="total-6">---</div>
+                            <div class="subject-row pt-5" id="total-7">---</div>
+                            <div class="subject-row pt-5" id="total-8">---</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="result pt-4 bg-dark py-3">
+    <div class="container-fluid">
+      <div class="container text-dark">
+        <div class="row justify-content-center align-item-center">
+
+          <div class="col-lg-6 col-md-6 me-2">
+  
+          <div class="rounded-card rounded-pill shadow fst-italic border-0">
+            <div id="totalMarksObtained" class=" text-center  text-white   fw-bolder fs-5 pt-3">Total marks Obtained :- </div>
+
+            <div id="totalPercentage" class=" text-center text-white fw-bolder fs-5 pb-3">Total Percentage Obtained :- </div>
+
+          </div>
+        </div>
+        </div>
+      </div> 
+    </div>
+
+   
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg pt-1 pb-4 ms-5 mt-3 ps-5 align-items-center">
+            </div>
+        </div>
+    
+        <div class="row justify-content-center">
+
+          <div class="col-auto ms-3 d-block mb-4">
+            <button  id="submit" type="submit" class="btn btn-info rounded-pill btn-ignou fw-bolder text-white px-4  fs-5 me-5" onclick="submitValue()" id="submitBtn1">Submit marks</button>
+          </div>
+
+          <div class="col-auto d-block mb-4 sm:pe-3">
+            <button id="clear"  type="button" class="btn btn-info rounded-pill btn-ignou fw-bolder text-white px-4 ms-4 fs-5 " onclick="clearFields()" id="submitBtn2">Clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </section>
+
+
+
+
+
+
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

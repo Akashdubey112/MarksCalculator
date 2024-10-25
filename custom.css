@@ -1,0 +1,213 @@
+
+/* Existing CSS remains the same */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Your existing general styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+/* Keyframes and animations */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.navbar {
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Center navbar items */
+}
+
+.navbar-brand img {
+    margin-left: 10px;
+}
+
+.custom-img {
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+.custom-img:hover {
+    box-shadow: 0 0 20px #fff;
+}
+
+/* Body padding for fixed navbar */
+body {
+    padding-top: 80px;
+    background-color: #6d6e75;
+}
+
+.btn-ignou:hover {
+    transform: scale(1.1);
+}
+
+.btn-ignou {
+    background-color: rgba(0, 136, 169, 1);
+    font-style: oblique;
+}
+
+/* Section and Heading */
+.section-1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.heading-tag {
+    animation: fadeInOut 2.5s ease infinite;
+}
+
+/* Information ticker */
+.info-ticker {
+     position: relative;
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow */
+    background-color: #24252A;
+}
+
+#grade-Card {
+    color: rgb(38, 111, 255);
+}
+
+#grade-Card:hover {
+    color: #656565;
+    cursor: pointer;
+}
+
+.info-items {
+    display: inline-block;
+    animation: scroll 25s linear infinite;
+}
+
+/* Navbar Links */
+.nav-link a {
+    border-radius: 50px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #6d6e75; 
+    box-shadow: 0 0 20px #fff; 
+    transform: scale(0.8); 
+    border-radius: 50px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; 
+}
+
+footer a {
+    color: white; /* White text for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+/* Form Styles */
+.rounded-layout {
+    background-color: #2b2f3e; 
+    border-radius: 20px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.col-title {
+    color: #fff; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+    text-decoration: underline;
+}
+
+.subject-row {
+    margin-bottom: 20px;
+    color: white; 
+    font-size: 15px; 
+    font-weight: 500; 
+    text-align: center; 
+    height: auto; 
+}
+
+.input-box {
+    width: 80px; 
+    height: 42px; 
+    border-radius: 5px; 
+    border: 2px solid #ccc; 
+    padding: 5px; 
+    text-align: center;
+    color: white; 
+    background-color: #3c3f50; 
+}
+
+/* Responsive design (mobile adjustments) */
+@media (max-width: 768px) {
+    .rounded-layout {
+        padding: 20px; 
+    }
+
+    .subject-row {
+        font-size: 16px; 
+    }
+
+    .input-box {
+        width: 80px; 
+        height: 40px; 
+    }
+
+    .navbar-nav .nav-item {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn-ignou {
+        width: 100%;  /* Buttons full-width on mobile */
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .scroll-text {
+        font-size: 12px;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+
+    .rounded-card {
+        padding: 15px; 
+        
+    }
+}
+
+
